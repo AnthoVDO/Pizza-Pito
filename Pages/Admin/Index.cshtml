@@ -1,0 +1,21 @@
+﻿@page
+@model Pizza_Pito.Pages.Admin.IndexModel
+@{
+}
+
+<h1>Vous devez vous identifier</h1>
+<br />
+<br />
+@if(Model.incorrectInput) { 
+<div>
+    <div class="alert alert-danger" role="alert">
+        Utilisateur ou mot de passe incorrecte
+    </div>
+</div>
+}
+
+<form method="post">
+    <input type="text" name="username" placeholder="Login" /><br /><br />
+    <input type="password" name="password" placeholder="Mot de passe" /><br/><br />
+    <button class="btn btn-primary" action="submit">Se connecter</button>
+</form>
