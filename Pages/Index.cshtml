@@ -7,11 +7,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Pizza Pito</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="text-center">
-        <h1 class="display-4">Pizza Pito Accueil</h1>
-        <p><a asp-page="MenuPizza">Voir le menu des pizzas</a></p>
+    <div class="container" id="indexContainer">
+        <div class="index_wrapper">
+            <h1 class="index_title">Pizza Pito</h1>
+            <h2 class="inedx_slogan">-La passion des pizzas-</h2>
+            <p class="index_link"><a asp-page="MenuPizza">Voir le menu</a></p>
+        </div>
+        
     </div>
 </body>
 </html>

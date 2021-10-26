@@ -1,0 +1,130 @@
+﻿body {
+    font-family: Arial;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+.container{
+     width:100%;
+    height:100%;
+    
+}
+
+/*index*/
+#indexContainer {
+    background: linear-gradient(0, rgba(0,0,0, 0.3),rgba(0,0,0, 0.5)), url("/images/main_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.index_title {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 4em;
+    margin: 0 0 25px 0;
+}
+
+.inedx_slogan {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+.index_link {
+    text-align: center;
+    
+}
+
+.index_link a{
+    color:#dd7835;
+    cursor:pointer;
+}
+
+
+/*menu pizza*/
+#menuPizzaContainer {
+    background: linear-gradient(0, rgba(0,0,0, 0.3),rgba(0,0,0, 0.3)), url("/images/menu_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 25px;
+}
+
+#logoTitle_small {
+    margin: 0 0 45px 35px;
+}
+
+#logoTitle_small a {
+    font-family: 'Caveat', cursive;
+   
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#pizzaMenuTitle{
+    padding:15px 25px;
+    background-color: #dd7835;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    
+}
+
+.pizza-list{
+    list-style-type:none;
+}
+
+.pizza-items {
+    margin-left: 3em;
+}
+
+.pizza-items_container{
+    padding:0.8em;
+}
+
+.pizza-items_name {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    display:inline-block;
+}
+
+.pizza-items_price {
+    color: #dd7835;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0 0 0 1em;
+    display:inline-block;
+}
+
+.pizza-items_ingredients {
+    font-weight: 500;
+    font-size: 1em;
+    color: lightgray;
+    display:block;
+    margin:8px 0 0 0;
+}
+
+.pizza-items_vegetarian {
+    font-weight: 700;
+    font-size: 0.7em;
+    color: black;
+    background-color: #dd7835;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 8px 0 0 0;
+    padding:3px 8px;
+}

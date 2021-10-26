@@ -6,11 +6,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Menu de Pizza Pito</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Menu des pizzas</h1>
-        <a asp-page="Index">Retour à l'accueil</a>
+    <div class="container" id="menuPizzaContainer">
+        <h1 id="logoTitle_small"><a asp-page="Index">Pizza Pito</a></h1>
+        <h2 id="pizzaMenuTitle">Les Pizzas</h2>
+        
+        <div>
+            <ul class="pizza-list">
+                @foreach(var p in Model.Pizza)
+                {
+                    string first = p.nom.ToUpper();
+                    string second = p.nom.ToLower();
+
+                    string name = first[0] + second[1..];
+
+                    string vegetarienne = "Végétarienne";
+
+                    <li class="pizza-items">
+                        <div class="pizza-items_container">
+                            <p class="pizza-items_name">@name</p>
+                            <p class="pizza-items_price">@String.Format("{0:0.00}", p.prix)€</p>
+                            <p class="pizza-items_ingredients">@p.ingredients</p>
+                            @if (p.vegetarienne)
+                {
+                                
+                        <p class="pizza-items_vegetarian">@vegetarienne</p>
+                }
+                            
+                        </div>
+                 
+                    </li>
+            }
+            </ul>
+        </div>
     </div>
 </body>
 </html>
